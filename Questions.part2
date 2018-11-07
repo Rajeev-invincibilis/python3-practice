@@ -1,1 +1,31 @@
-This is a new file
+s a file containing one name in each line. Write the pseudocode for a program that finds the non-duplicate names (names that occur exactly once) and duplicate names (names that occur more than once) in the file
+
+Sample input file:
+
+Jack
+
+John
+
+Jeff
+
+Jonah
+
+Jack
+
+Jonah
+
+Output:
+
+Non-duplicates:
+
+
+John
+
+Jeff
+
+
+Duplicates:
+
+Jack
+
+Jonah
