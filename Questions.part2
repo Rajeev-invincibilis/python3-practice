@@ -1,4 +1,4 @@
-s a file containing one name in each line. Write the pseudocode for a program that finds the non-duplicate names (names that occur exactly once) and duplicate names (names that occur more than once) in the file
+There is a file containing one name in each line. Write the pseudocode for a program that finds the non-duplicate names (names that occur exactly once) and duplicate names (names that occur more than once) in the file
 
 Sample input file:
 
@@ -29,5 +29,3 @@ Duplicates:
 Jack
 
 Jonah
-small correction in question---missing 'there is a file containing' 
--missing 'there is a file containing' 
