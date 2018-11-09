@@ -1,21 +1,18 @@
-items_list = []
 duplicates = []
 nonduplicates = []
 
 filedata = open('datafile','r')
 
 for records in filedata:
-    items_list.append(records.replace('\n',''))
-
-for item in items_list:
-    if items_list.count(item) == 1:
-        nonduplicates.append(item)
-    else:
+    try:
+        nonduplicates.index(records.replace('\n',''))
+        nonduplicates.remove(records.replace('\n',''))
         try:
-            duplicates.index(item)
+            duplicates.index(records.replace('\n',''))
         except:
-            duplicates.append(item)
-
+            duplicates.append(records.replace('\n',''))
+    except:
+        nonduplicates.append(records.replace('\n',''))
 
 print("Non Duplicates:")
 for item in nonduplicates:
@@ -26,5 +23,3 @@ print()
 print("Duplicates:")
 for item in duplicates:
     print(item)
-
-
